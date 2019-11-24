@@ -1,11 +1,11 @@
 HTML:
-  - **/*.html
+  - *.html
 
 Javascript
-  - **/*.js
+  - *.js
 
 CSS:
-  - **/*.css
+  - *.css
 
 Nginx:
   - nginx/*
