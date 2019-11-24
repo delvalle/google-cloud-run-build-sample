@@ -1,0 +1,28 @@
+{
+  "name": "google-cloud-run-build-sample",
+  "version": "1.0.0",
+  "description": "Sample Project to work with Google Cloud Run/Build",
+  "scripts": {
+    "clean": "rimraf dist build",
+    "copy": "copyfiles -u 1 './src/**/*' build",
+    "build": "npm-run-all clean copy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/delvalle/google-cloud-run-build-sample.git"
+  },
+  "keywords": [
+    "google-cloud",
+    "google-cloud-run",
+    "google-cloud-build",
+    "docker",
+    "nginx"
+  ],
+  "author": "Pablo A. Del Valle H.",
+  "license": "ISC",
+  "devDependencies": {
+    "copyfiles": "^2.1.1",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.0"
+  }
+}
