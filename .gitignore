@@ -1,0 +1,15 @@
+# Dependency directories
+node_modules/
+
+# Cache directory
+.npm
+.cache
+
+# IDEA files
+.idea
+
+# OS files
+.DS_Store
+
+# Build directory
+build/
