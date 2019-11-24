@@ -27,7 +27,7 @@ NPM:
   - ./README.md
 
 documentation:
-  - ./README.md
+  - ./README.MD
 
 src:
   - ./src/*
