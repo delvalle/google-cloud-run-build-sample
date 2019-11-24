@@ -4,7 +4,7 @@
 
 ### Addresses issue(s):
 
-- Github Issue:
+- Github Issue: https://github.com/delvalle/google-cloud-run-build-sample/issues/ISSUE_NUMBER
 
 ### Test pages:
 
