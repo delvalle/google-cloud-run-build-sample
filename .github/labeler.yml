@@ -26,5 +26,8 @@ NPM:
   - package-lock.json
   - README.md
 
+documentation:
+  - README.md
+
 src:
   - src/*
