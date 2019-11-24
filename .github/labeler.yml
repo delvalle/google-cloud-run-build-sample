@@ -1,0 +1,30 @@
+HTML:
+  - **/*.html
+
+Javascript
+  - **/*.js
+
+CSS:
+  - **/*.css
+
+Nginx:
+  - nginx/*
+
+Docker:
+  - Dockerfile
+
+GIT:
+  - .gitignore
+  - .github/*
+
+ignore:
+  - .gitignore
+  - .gcloudignore
+
+NPM:
+  - package.json
+  - package-lock.json
+  - README.md
+
+src:
+  - src/*
