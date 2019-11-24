@@ -4,8 +4,8 @@ Sample Project to work with Google Cloud Run/Build
 This is a sample project to test Google Cloud Platform using their services Cloud Build and Cloud Run.
 
 Products included:
-- Cloud Build
-- Cloud Run
+- Google Cloud Build
+- Google Cloud Run
 - Docker
 - Nginx
 
