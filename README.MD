@@ -14,6 +14,8 @@ A **Docker** container with an **Nginx** image will be deployed.
 
 ---
 
+## Commands
+
 To generate the distribution directory run `npm run build`. This build will be created under the `build/` directory.
 
 Thanks!
