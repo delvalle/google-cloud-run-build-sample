@@ -1,11 +1,15 @@
-name: "Pull Request Labeler"
+name: Labeler
 on:
-- pull_request
-
+  pull_request:
+    branches:
+      - master
 jobs:
-  triage:
+  pr_labeler:
+    name: PR Labeler
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/labeler@v2
-      with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+      - name: Set PR label
+        if: github.event.action == 'opened' || github.event.action == 'synchronize'
+        uses: actions/labeler@v2
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
