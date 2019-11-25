@@ -14,6 +14,7 @@ p {
 }
 
 footer {
+  border-radius: 10px;
   background-color: #F4F4F4;
   padding: 10px;
 }
