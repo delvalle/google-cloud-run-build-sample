@@ -4,9 +4,9 @@ steps:
 - name: 'gcr.io/cloud-builders/npm'
   args: ['run', 'build']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/${_SERVICE}:$REVISION_ID', '.']
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/${_SERVICE}:$BUILD_ID', '.']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/$PROJECT_ID/${_SERVICE}:$REVISION_ID']
+  args: ['push', 'gcr.io/$PROJECT_ID/${_SERVICE}:$BUILD_ID']
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
   - 'beta'
@@ -14,7 +14,7 @@ steps:
   - 'deploy'
   - '${_SERVICE}'
   - '--image'
-  - 'gcr.io/$PROJECT_ID/${_SERVICE}:$REVISION_ID'
+  - 'gcr.io/$PROJECT_ID/${_SERVICE}:$BUILD_ID'
   - '--region'
   - '${_REGION}'
   - '--platform'
