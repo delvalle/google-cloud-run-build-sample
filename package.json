@@ -22,7 +22,6 @@
   "license": "ISC",
   "devDependencies": {
     "copyfiles": "^2.1.1",
-    "labeler": "github:actions/labeler",
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.0"
   }

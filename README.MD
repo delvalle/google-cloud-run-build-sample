@@ -1,5 +1,5 @@
 # google-cloud-run-build-sample
-Sample Project to work with Google Cloud Run/Build
+Sample Project to work with **Google Cloud Run/Build**.
 
 This is a sample project to test **Google Cloud Platform** using their services **Cloud Build** and **Cloud Run**.
 A **Docker** container with an **Nginx** image will be deployed. 
