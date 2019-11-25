@@ -49,8 +49,6 @@ Examples:
 - feature/master/lint-extension
 - fix/master/about-us-flicking
 
-This naming convention is enforced.
-
 ---
 
 Thanks!
