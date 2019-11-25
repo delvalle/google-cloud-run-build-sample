@@ -26,5 +26,6 @@ steps:
   args: ['run', 'semantic-release']
   env:
    - 'GITHUB_TOKEN=${_GITHUB_TOKEN}'
+   - 'GIT_BRANCH=master'
 images:
   - gcr.io/$PROJECT_ID/${_SERVICE}:$TAG_NAME

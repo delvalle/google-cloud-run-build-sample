@@ -6,7 +6,7 @@
     "clean": "rimraf dist build",
     "copy": "copyfiles -u 1 './src/**/*' build",
     "build": "npm-run-all clean copy",
-    "semantic-release": "semantic-release --branch master --no-ci"
+    "semantic-release": "semantic-release --no-ci"
   },
   "repository": {
     "type": "git",
