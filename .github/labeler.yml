@@ -1,4 +1,4 @@
-HTML: ./src/*.html
+HTML: src/*.html
 
 Javascript: ./src/*.js
 
