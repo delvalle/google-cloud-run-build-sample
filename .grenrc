@@ -1,0 +1,11 @@
+{
+    "dataSource": "prs",
+    "prefix": "",
+    "ignoreLabels": ["duplicate", "invalid", "wontfix"],
+    "onlyMilestones": false,
+    "groupBy": {
+      "Enhancements:": ["enhancement", "internal", "feature", "documentation", "src"],
+      "Bug Fixes:": ["bug", "fix"]
+    },
+    "changelogFilename": "CHANGELOG.md"
+}

@@ -6,7 +6,9 @@
     "clean": "rimraf dist build",
     "copy": "copyfiles -u 1 './src/**/*' build",
     "build": "npm-run-all clean copy",
-    "semantic-release": "semantic-release --no-ci"
+    "gren-release": "gren release --override",
+    "gren-generate": "gren release --override",
+    "release": "npm-run-all gren-release gren-generate"
   },
   "repository": {
     "type": "git",
@@ -23,8 +25,8 @@
   "license": "ISC",
   "devDependencies": {
     "copyfiles": "^2.1.1",
+    "github-release-notes": "^0.17.0",
     "npm-run-all": "^4.1.5",
-    "rimraf": "^3.0.0",
-    "semantic-release": "^15.13.31"
+    "rimraf": "^3.0.0"
   }
 }
