@@ -13,7 +13,7 @@ steps:
   - 'beta'
   - 'run'
   - 'deploy'
-  - '${_SERVICE}'
+  - '${_SERVICE}:$TAG_NAME'
   - '--allow-unauthenticated'
   - '--region'
   - '${_REGION}'
