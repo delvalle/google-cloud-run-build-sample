@@ -19,6 +19,8 @@ steps:
   - '${_REGION}'
   - '--platform'
   - 'managed'
+  - '--project'
+  - '$PROJECT_ID'
   - '--allow-unauthenticated'
 images:
   - gcr.io/$PROJECT_ID/${_SERVICE}
