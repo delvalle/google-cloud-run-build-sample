@@ -11,7 +11,7 @@ jobs:
       - name: Checks PR name
         uses: deepakputhraya/action-pr-title@master
         with:
-          regex: '^(FEATURE|FIX|ENHANCEMENT|CHORE|REFACTOR): .+$'
+          regex: '^(FEATURE|FIX|ENHANCEMENT|CHORE|REFACTOR): [a-zA-Z0-9._-]+$'
           allowed_prefixes: 'FEATURE,FIX,ENHANCEMENT,CHORE,REFACTOR'
           prefix_case_sensitive: true
           min_length: 7
