@@ -19,11 +19,17 @@ A **Docker** container with an **Nginx** image will be deployed to host a simple
 To generate the distribution directory run:
 - `npm run build` this build will be created under the `build/` directory.
 
+Before running the gcloud command-line tools, you may need to, authenticate:
+- `gcloud auth login`
+
+And select your project (replace YOURPROJECTID with your own):
+- `gcloud config set project YOURPROJECTID`
+
 To build using gcloud command-line run:
 - `gcloud builds submit --tag gcr.io/YOURPROJECTID/hello-sample`
 
 To deploy using gcloud command-line run:
--  `gcloud run deploy hello-sample --allow-unauthenticated --platform managed --image gcr.io/YOURPROJECTID/hello-sample`
+-  `gcloud run deploy hello-sample --allow-unauthenticated --region us-central1 --platform managed --image gcr.io/YOURPROJECTID/hello-sample`
 
 ---
 
