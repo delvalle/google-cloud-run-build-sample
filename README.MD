@@ -27,4 +27,15 @@ To deploy using gcloud command-line run:
 
 ---
 
+## Pull Requests
+
+Pull requests should follow this naming convention:
+- ^FEATURE|FIX|ENHANCEMENT|CHORE|REFACTOR: .+$
+
+Examples:
+- FEATURE: adding a new extension for linting
+- FIX: removing screen flicker in the About Us page
+
+---
+
 Thanks!
