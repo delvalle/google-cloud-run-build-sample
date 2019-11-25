@@ -1,0 +1,15 @@
+steps:
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['install']
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['build']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/my-image:$TAG_NAME', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args:
+  - 'run'
+  - '--allow-unauthenticated'
+  - '--region=${_REGION}'
+  - '--platform=managed'
+  - '--image=gcr.io/$PROJECT_ID/${_SERVICE}:$TAG_NAME'
+  - '--project=$PROJECT_ID'
