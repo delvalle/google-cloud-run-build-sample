@@ -7,19 +7,19 @@ steps:
   args:
   - 'builds'
   - 'submit'
-  - '--tag=gcr.io/$PROJECT_ID/${_SERVICE}:$TAG_NAME'
+  - '--tag=gcr.io/$PROJECT_ID/${_SERVICE}'
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
   - 'beta'
   - 'run'
   - 'deploy'
-  - '${_SERVICE}:$TAG_NAME'
+  - '${_SERVICE}'
   - '--allow-unauthenticated'
   - '--region'
   - '${_REGION}'
   - '--platform'
   - 'managed'
   - '--image'
-  - 'gcr.io/$PROJECT_ID/${_SERVICE}:$TAG_NAME'
+  - 'gcr.io/$PROJECT_ID/${_SERVICE}'
 images:
-  - gcr.io/$PROJECT_ID/${_SERVICE}:$TAG_NAME
+  - gcr.io/$PROJECT_ID/${_SERVICE}
