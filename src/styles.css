@@ -4,6 +4,13 @@ body {
   padding: 0 20px;
 }
 
+header {
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  background-color: lightgoldenrodyellow;
+  padding: 10px;
+}
+
 h1 {
   color: darkslategray;
   font-size: 1.5rem;
