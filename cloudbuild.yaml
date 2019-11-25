@@ -13,12 +13,12 @@ steps:
   - 'run'
   - 'deploy'
   - '${_SERVICE}'
-  - '--allow-unauthenticated'
+  - '--image'
+  - 'gcr.io/$PROJECT_ID/${_SERVICE}'
   - '--region'
   - '${_REGION}'
   - '--platform'
   - 'managed'
-  - '--image'
-  - 'gcr.io/$PROJECT_ID/${_SERVICE}'
+  - '--allow-unauthenticated'
 images:
   - gcr.io/$PROJECT_ID/${_SERVICE}
