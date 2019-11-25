@@ -24,8 +24,9 @@ steps:
   - '--allow-unauthenticated'
 - name: 'gcr.io/cloud-builders/git'
   args:
-  - 'config'
-  - '--global'
+  - 'remote'
+  - 'set-url'
+  - 'origin'
   - '${_GITHUB_URL}'
 - name: 'gcr.io/cloud-builders/npm:current'
   args: ['run', 'release']
