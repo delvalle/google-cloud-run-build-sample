@@ -29,7 +29,7 @@ To build using gcloud command-line run:
 - `gcloud builds submit --tag gcr.io/YOURPROJECTID/hello-sample`
 
 To deploy using gcloud command-line run:
--  `gcloud run deploy hello-sample --allow-unauthenticated --region us-central1 --platform managed --image gcr.io/YOURPROJECTID/hello-sample`
+-  `gcloud run deploy hello-sample --allow-unauthenticated --region us-central1 --platform managed --image gcr.io/YOURPROJECTID/hello-sample --project YOURPROJECTID`
 
 ---
 
