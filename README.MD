@@ -30,7 +30,7 @@ To deploy using gcloud command-line run:
 ## Pull Requests naming convention
 
 Pull requests should follow this naming convention:
-- ^(FEATURE|FIX|ENHANCEMENT|CHORE|REFACTOR): [a-zA-Z0-9._-]+$
+- ^(FEATURE|FIX|ENHANCEMENT|CHORE|REFACTOR): [a-zA-Z 0-9._-]+$
 
 Examples:
 - FEATURE: adding a new extension for linting
