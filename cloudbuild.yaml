@@ -10,6 +10,7 @@ steps:
   - '--tag=gcr.io/$PROJECT_ID/my-image:$TAG_NAME'
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
+  - 'beta'
   - 'run'
   - '--deploy=${_SERVICE}'
   - '--allow-unauthenticated'
