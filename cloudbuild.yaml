@@ -27,5 +27,6 @@ steps:
   env:
    - 'GITHUB_TOKEN=${_GITHUB_TOKEN}'
    - 'GIT_BRANCH=master'
+   - 'env-ci=master'
 images:
   - gcr.io/$PROJECT_ID/${_SERVICE}:$REVISION_ID
