@@ -22,9 +22,5 @@ steps:
   - '--project'
   - '$PROJECT_ID'
   - '--allow-unauthenticated'
-- name: 'gcr.io/cloud-builders/npm:current'
-  args: ['run', 'release']
-  env:
-   - 'GREN_GITHUB_TOKEN=${_GITHUB_TOKEN}'
 images:
   - gcr.io/$PROJECT_ID/${_SERVICE}:$REVISION_ID
