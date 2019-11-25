@@ -1,0 +1,12 @@
+{
+  "dataSource": "milestones",
+  "ignoreIssuesWith": [
+    "wontfix",
+    "duplicate"
+  ],
+  "groupBy": {
+    "Enhancements:": ["feature", "enhancement", "chore", "internal"],
+    "Bug Fixes:": ["fix"]
+  },
+  "prefix": "v"
+}
