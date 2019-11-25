@@ -12,7 +12,8 @@ steps:
   args:
   - 'beta'
   - 'run'
-  - 'deploy ${_SERVICE}'
+  - 'deploy'
+  - '${_SERVICE}'
   - '--allow-unauthenticated'
   - '--region ${_REGION}'
   - '--platform managed'
