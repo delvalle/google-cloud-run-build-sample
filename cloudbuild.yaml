@@ -24,6 +24,9 @@ steps:
   - '--allow-unauthenticated'
 - name: 'gcr.io/cloud-builders/git'
   args:
+  - 'init'
+- name: 'gcr.io/cloud-builders/git'
+  args:
   - 'remote'
   - 'set-url'
   - 'origin'
