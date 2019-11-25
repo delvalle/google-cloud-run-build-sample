@@ -6,7 +6,7 @@ A **Docker** container with an **Nginx** image will be deployed to host a simple
 
 ---
 
-## Products included:
+## Products used on this project:
 - Google Cloud Build
 - Google Cloud Run
 - Docker
