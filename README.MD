@@ -27,14 +27,29 @@ To deploy using gcloud command-line run:
 
 ---
 
-## Pull Requests
+## Pull Requests naming convention
 
 Pull requests should follow this naming convention:
-- ^FEATURE|FIX|ENHANCEMENT|CHORE|REFACTOR: .+$
+- ^(FEATURE|FIX|ENHANCEMENT|CHORE|REFACTOR): .+$
 
 Examples:
 - FEATURE: adding a new extension for linting
 - FIX: removing screen flicker in the About Us page
+
+This naming convention is enforced.
+
+---
+
+## Pull Requests branch naming convention
+
+Pull request branches should follow this naming convention:
+- ^(feature|fix|enhancement|chore|refactor)\/master\/.+$
+
+Examples:
+- feature/master/lint-extension
+- fix/master/about-us-flicking
+
+This naming convention is enforced.
 
 ---
 
