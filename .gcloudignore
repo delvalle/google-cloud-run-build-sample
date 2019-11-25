@@ -11,6 +11,9 @@ node_modules/
 # OS files
 .DS_Store
 
+# Local .env
+.env
+
 # git
 .git
 .gitignore

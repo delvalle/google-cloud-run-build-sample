@@ -11,5 +11,8 @@ node_modules/
 # OS files
 .DS_Store
 
+# Local .env
+.env
+
 # Build directory
 build/

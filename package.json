@@ -7,9 +7,9 @@
     "copy": "copyfiles -u 1 './src/**/*' build",
     "build": "npm-run-all clean copy",
     "gren-release": "gren release --override",
-    "gren-generate": "gren release --override",
-    "release": "npm-run-all gren-release gren-generate"
+    "gren-generate": "gren changelog --override"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/delvalle/google-cloud-run-build-sample.git"
@@ -25,6 +25,7 @@
   "license": "ISC",
   "devDependencies": {
     "copyfiles": "^2.1.1",
+    "dotenv": "^8.2.0",
     "github-release-notes": "^0.17.0",
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.0"
