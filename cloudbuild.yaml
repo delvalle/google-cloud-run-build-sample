@@ -21,3 +21,5 @@ steps:
   - 'managed'
   - '--image'
   - 'gcr.io/$PROJECT_ID/${_SERVICE}:$TAG_NAME'
+images:
+  - gcr.io/$PROJECT_ID/${_SERVICE}:$TAG_NAME
