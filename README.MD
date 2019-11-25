@@ -14,25 +14,6 @@ A **Docker** container with an **Nginx** image will be deployed to host a simple
 
 ---
 
-## Commands
-
-To generate the distribution directory run:
-- `npm run build` this build will be created under the `build/` directory.
-
-Before running the gcloud command-line tools, you may need to, authenticate:
-- `gcloud auth login`
-
-And select your project (replace YOURPROJECTID with your own):
-- `gcloud config set project YOURPROJECTID`
-
-To build using gcloud command-line run:
-- `gcloud builds submit --tag gcr.io/YOURPROJECTID/hello-sample`
-
-To deploy using gcloud command-line run:
--  `gcloud run deploy hello-sample --allow-unauthenticated --region us-central1 --platform managed --image gcr.io/YOURPROJECTID/hello-sample --project YOURPROJECTID`
-
----
-
 ## Pull Requests naming convention
 
 Pull requests should follow this naming convention:
@@ -54,6 +35,28 @@ Pull request branches should follow this naming convention:
 Examples:
 - feature/master/lint-extension
 - fix/master/about-us-flicking
+
+---
+
+## Commands
+
+To generate the distribution directory run:
+- `npm run build` this build will be created under the `build/` directory.
+
+Before running the gcloud command-line tools, you may need to, authenticate:
+- `gcloud auth login`
+
+And select your project (replace YOURPROJECTID with your own):
+- `gcloud config set project YOURPROJECTID`
+
+To build using gcloud command-line run:
+- `gcloud builds submit --tag gcr.io/YOURPROJECTID/hello-sample`
+
+To deploy using gcloud command-line run:
+-  `gcloud run deploy hello-sample --allow-unauthenticated --region us-central1 --platform managed --image gcr.io/YOURPROJECTID/hello-sample --project YOURPROJECTID`
+
+All-in-one command:
+- `gcloud components update --quiet && npm i && npm run build && gcloud builds submit --tag gcr.io/YOURPROJECTID/hello-sample && gcloud run deploy hello-sample --allow-unauthenticated --region us-central1 --platform managed --image gcr.io/YOURPROJECTID/hello-sample --project YOURPROJECTID`
 
 ---
 
