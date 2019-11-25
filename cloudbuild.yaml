@@ -25,6 +25,6 @@ steps:
 - name: 'gcr.io/cloud-builders/npm'
   args: ['semantic-release']
   env:
-   - 'GITHUB_TOKEN=e1d78d9bed87ada091345dbc22501e15a831d83b'
+   - 'GITHUB_TOKEN=${_GITHUB_TOKEN}'
 images:
   - gcr.io/$PROJECT_ID/${_SERVICE}:$TAG_NAME
