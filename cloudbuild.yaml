@@ -7,7 +7,7 @@ steps:
   args:
   - 'builds'
   - 'submit'
-  - '--tag gcr.io/$PROJECT_ID/${_SERVICE}:$TAG_NAME'
+  - '--tag=gcr.io/$PROJECT_ID/${_SERVICE}:$TAG_NAME'
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
   - 'beta'
