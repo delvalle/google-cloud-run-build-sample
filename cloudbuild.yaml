@@ -23,7 +23,7 @@ steps:
   - '$PROJECT_ID'
   - '--allow-unauthenticated'
 - name: 'gcr.io/cloud-builders/npm'
-  args: ['semantic-release']
+  args: ['run', 'semantic-release']
   env:
    - 'GITHUB_TOKEN=${_GITHUB_TOKEN}'
 images:

@@ -5,7 +5,8 @@
   "scripts": {
     "clean": "rimraf dist build",
     "copy": "copyfiles -u 1 './src/**/*' build",
-    "build": "npm-run-all clean copy"
+    "build": "npm-run-all clean copy",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
