@@ -22,9 +22,9 @@ steps:
   - '--project'
   - '$PROJECT_ID'
   - '--allow-unauthenticated'
-#- name: 'gcr.io/cloud-builders/npm:current'
-#  args: ['run', 'semantic-release']
-#  env:
-#   - 'GITHUB_TOKEN=${_GITHUB_TOKEN}'
+- name: 'gcr.io/cloud-builders/npm:current'
+  args: ['run', 'semantic-release']
+  env:
+   - 'GITHUB_TOKEN=${_GITHUB_TOKEN}'
 images:
   - gcr.io/$PROJECT_ID/${_SERVICE}:$TAG_NAME
