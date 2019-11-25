@@ -1,26 +1,26 @@
 HTML: src/*.html
 
-Javascript: ./src/*.js
+Javascript: src/*.js
 
-CSS: ./src/*.css
+CSS: src/*.css
 
-Nginx: ./nginx/*
+Nginx: nginx/*
 
-Docker: ./Dockerfile
+Docker: Dockerfile
 
 GIT:
-  - ./.gitignore
-  - ./.github/*
+  - .gitignore
+  - .github/*
 
 ignore:
-  - ./.gitignore
-  - ./.gcloudignore
+  - .gitignore
+  - .gcloudignore
 
 NPM:
-  - ./package.json
-  - ./package-lock.json
-  - ./README.md
+  - package.json
+  - package-lock.json
+  - README.md
 
-documentation: ./README.MD
+documentation: README.MD
 
-src: ./src/*
+src: src/*
