@@ -22,6 +22,15 @@ steps:
   - '--project'
   - '$PROJECT_ID'
   - '--allow-unauthenticated'
+- name: 'gcr.io/cloud-builders/git'
+  args:
+  - 'init'
+- name: 'gcr.io/cloud-builders/git'
+  args:
+  - 'remote'
+  - 'set-url'
+  - 'origin'
+  - '${_GITHUB_URL}'
 - name: 'gcr.io/cloud-builders/npm:current'
   args: ['run', 'release']
   env:
