@@ -16,6 +16,10 @@ h1 {
   font-size: 1.5rem;
 }
 
+h1 a {
+  color: darkslategray;
+}
+
 p {
   margin: 5px 0;
 }
