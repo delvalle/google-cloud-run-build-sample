@@ -4,13 +4,13 @@ steps:
   timeout: 25s
 - name: 'gcr.io/cloud-builders/npm'
   args: ['run', 'build']
-  timeout: 5s
+  timeout: 10s
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/$PROJECT_ID/${_SERVICE}:$REVISION_ID', '.']
-  timeout: 10s
+  timeout: 15s
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/$PROJECT_ID/${_SERVICE}:$REVISION_ID']
-  timeout: 10s
+  timeout: 15s
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
   - 'beta'
@@ -27,7 +27,7 @@ steps:
   - '$PROJECT_ID'
   - '--allow-unauthenticated'
   timeout: 25s
-- name: 'gcr.io/cloud-builders/node:current'
+- name: 'gcr.io/cloud-builders/npm:current'
   args:
     - 'run'
     - 'gren-release'
