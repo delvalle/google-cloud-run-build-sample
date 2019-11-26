@@ -13,7 +13,3 @@ node_modules/
 
 # Local .env
 .env
-
-# git
-.git
-.gitignore
