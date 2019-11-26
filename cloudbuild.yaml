@@ -25,17 +25,17 @@ steps:
 #- name: 'gcr.io/cloud-builders/git'
 #  args:
 #  - 'init'
-- name: 'gcr.io/cloud-builders/git'
-  args:
-  - 'remote'
-  - 'set-url'
-  - 'origin'
-  - '${_GITHUB_URL}'
-- name: 'gcr.io/cloud-builders/npm:current'
-  args:
-    - 'run'
-    - 'gren-release'
-  env:
-    - 'GREN_GITHUB_TOKEN=${_GITHUB_TOKEN}'
+#- name: 'gcr.io/cloud-builders/git'
+#  args:
+#  - 'remote'
+#  - 'set-url'
+#  - 'origin'
+#  - '${_GITHUB_URL}'
+#- name: 'gcr.io/cloud-builders/npm:current'
+#  args:
+#    - 'run'
+#    - 'gren-release'
+#  env:
+#    - 'GREN_GITHUB_TOKEN=${_GITHUB_TOKEN}'
 images:
   - gcr.io/$PROJECT_ID/${_SERVICE}:$REVISION_ID
