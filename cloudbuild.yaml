@@ -1,16 +1,12 @@
 steps:
 - name: 'gcr.io/cloud-builders/npm'
   args: ['install']
-  timeout: 25s
 - name: 'gcr.io/cloud-builders/npm'
   args: ['run', 'build']
-  timeout: 10s
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/$PROJECT_ID/${_SERVICE}:$REVISION_ID', '.']
-  timeout: 15s
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/$PROJECT_ID/${_SERVICE}:$REVISION_ID']
-  timeout: 15s
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
   - 'beta'
@@ -26,13 +22,20 @@ steps:
   - '--project'
   - '$PROJECT_ID'
   - '--allow-unauthenticated'
-  timeout: 25s
+- name: 'gcr.io/cloud-builders/git'
+  args:
+  - 'init'
+- name: 'gcr.io/cloud-builders/git'
+  args:
+  - 'remote'
+  - 'set-url'
+  - 'origin'
+  - '${_GITHUB_URL}'
 - name: 'gcr.io/cloud-builders/npm:current'
   args:
     - 'run'
     - 'gren-release'
   env:
     - 'GREN_GITHUB_TOKEN=${_GITHUB_TOKEN}'
-  timeout: 10s
 images:
   - gcr.io/$PROJECT_ID/${_SERVICE}:$REVISION_ID
